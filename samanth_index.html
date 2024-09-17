@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Fresh Produce</title>
+    <link rel="icon" type="image/x-icon" href="assets/perfect_tomato.ico" />
+    <script src="https://kit.fontawesome.com/4dd101ab78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class = "navbar navbar-expand-lg navbar-light bg-secondary py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="./samanth_index.html">
+                <i class="fa-solid fa-seedling" style="color: #fffae6;"></i>
+                <span class="text-uppercase ms-2 text-white">Fresh Produce</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <i class="fa-solid fa-bars" style="color: #fffae6;"></i>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2 text-uppercase"><a class="nav-link text-white fw-lighter" href="#header">Sam's Fresh Produce</a></li>
+                    <li class="nav-item px-2 py-2 text-uppercase"><a class="nav-link text-white fw-lighter" href="../SarahAssignment01Files/sajahnkeCatalogPage1.html">Sarah's Ice Cream</a></li>
+                    <li class="nav-item px-2 py-2 text-uppercase"><a class="nav-link text-white fw-lighter" href="../about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="header" class="vh-100 carousel slide" data-bs-ride = "carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">A Fresh Selection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Fruits & Veggies</h1>
+                <a href="#catalog" class="btn mt-3 text-uppercase">check it out</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Garden Picks</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Fresh Produce</h1>
+                <a href="#catalog" class="btn mt-3 text-uppercase">See for Yourself</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <section id="catalog" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">The Produce Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="buttns btn m-2 active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="buttns btn m-2" data-filter=".veggies">Veggies</button>
+                    <button type="button" class="buttns btn m-2" data-filter=".fruits">Fruits</button>
+                </div>
+                <div class="catalog-list mt-4 row gx-0 gy-3">
+
+                    <div class="bellpeppers col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/bellpeppers.png" alt="bell peppers" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">bell pepper</p>
+                            <span class="fw-lighter">Red, orange, & yellow bell peppers are actually ripe green bell peppers.</span>
+                        </div>
+                    </div>
+
+                    <div class="apples col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/apples.png" alt="apples" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">apple</p>
+                            <span class="fw-lighter">It takes 36 apples to make one gallon of apple cider. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="carrots col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/carrots.png" alt="carrots" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">carrot</p>
+                            <span class="fw-lighter">Baby carrots are made from large carrots that are shaved down.</span>
+                        </div>
+                    </div>
+
+                    <div class="bananas col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/bananas.png" alt="bananas" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">banana</p>
+                            <span class="fw-lighter">Banana plants are actually giant herbs, not trees. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="greenbeans col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/greenbeans.png" alt="green beans" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">green bean</p>
+                            <span class="fw-lighter">Green beans taste best when they are thinner than a pencil.</span>
+                        </div>
+                    </div>
+
+                    <div class="oranges col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/oranges.png" alt="oranges" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">orange</p>
+                            <span class="fw-lighter">The color orange is named after the fruit, not the other way around. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="tomatoes col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/tomatoes.png" alt="tomatoes" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">tomato</p>
+                            <span class="fw-lighter">In the 1700s, tomatoes were called "poison apples."</span>
+                        </div>
+                    </div>
+
+                    <div class="grapes col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/grapes.png" alt="grapes" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">grape</p>
+                            <span class="fw-lighter">Unlike most plants, grapes can tolerate cold winters. 
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="onions col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/onion.png" alt="bell peppers" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">onion</p>
+                            <span class="fw-lighter">The world record onion was almost 19 pounds in 2014.</span>
+                        </div>
+                    </div>
+
+                    <div class="kiwis col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/kiwis.png" alt="kiwis" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">kiwi</p>
+                            <span class="fw-lighter">Kiwis are a popular ingredients in DIY face masks. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="broccoli col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/broccoli.png" alt="broccoli" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">broccoli</p>
+                            <span class="fw-lighter">There is no machine that can harvest broccoli; it is cut by hand.</span>
+                        </div>
+                    </div>
+
+                    <div class="lemons col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/lemons.png" alt="lemons" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">lemon</p>
+                            <span class="fw-lighter">Lemons are a hybrid between a sour orange and a citron. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="corns col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/corn.png" alt="corn" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">corn</p>
+                            <span class="fw-lighter">Corn is used in fireworks, glue, fabric, crayons, paint, and cosmetics. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="strawberries col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/strawberries.png" alt="strawberries" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">strawberry</p>
+                            <span class="fw-lighter">The fear of strawberries is called fragariaphobia.</span>
+                        </div>
+                    </div>
+
+                    <div class="cucumbers col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/cucumber.png" alt="cucumber" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">cucumber</p>
+                            <span class="fw-lighter">A cucumber's flavor comes from it's seeds in the center.</span>
+                        </div>
+                    </div>
+
+                    <div class="mangoes col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/mangoes.png" alt="mangoes" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">mango</p>
+                            <span class="fw-lighter">Mangoes are related to cashews and pistachios. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="eggplants col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/eggplant.png" alt="eggplant" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">eggplant</p>
+                            <span class="fw-lighter">Vegetarians use eggplant as a meat substitute.</span>
+                        </div>
+                    </div>
+
+                    <div class="peaches col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/peaches.png" alt="peaches" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">peach</p>
+                            <span class="fw-lighter">Peach fuzz is protective by keeping bugs away.</span>
+                        </div>
+                    </div>
+
+                    <div class="chilipeppers col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/chilipeppers.png" alt="chili peppers" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">chili pepper</p>
+                            <span class="fw-lighter">All birds are immune to the heat of chili peppers.</span>
+                        </div>
+                    </div>
+
+                    <div class="pineapples col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/pineapples.png" alt="pineapples" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">pineapple</p>
+                            <span class="fw-lighter">Pineapples ripen faster when they're upside down. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="peas col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/peas.png" alt="peas" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">pea</p>
+                            <span class="fw-lighter">A 100 calories serving of peas contains more protein than a whole egg.</span>
+                        </div>
+                    </div>
+
+                    <div class="blueberries col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/blueberries.png" alt="blueberries" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">blueberry</p>
+                            <span class="fw-lighter">Blueberries are one of the only foods that naturally contain antioxygens. 
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="squash col-md-6 col-lg-4 col-xl-3 p-2 veggies">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/squash.png" alt="squash" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">squash</p>
+                            <span class="fw-lighter">All parts of the squash plant are edible, including the stem and flowers.</span>
+                        </div>
+                    </div>
+
+                    <div class="watermelons col-md-6 col-lg-4 col-xl-3 p-2 fruits">
+                        <div class="catalog-img overflow-hidden">
+                            <img src="./assets/images/watermelons.png" alt="watermelons" class="w-100"/>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">watermelon</p>
+                            <span class="fw-lighter">The state vegetable of Oklahoma is the watermelon. 
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="#">Fresh Produce</a>
+                    <p class="mt-3" style="color: #fffae69f">Samantha Espinoza</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
