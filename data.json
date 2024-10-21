@@ -1,0 +1,101 @@
+[
+
+    {
+        "name" : "Cheese Panini",
+        "description" : "The SPARKS blend of cheese artfully pressed between two large pieces of bread.",
+        "image" : "./assets/img/grilledCheese2.jpg",
+        "pricemd": "3.75",
+        "category": "snack"
+    },
+
+    {
+        "name" : "Starry",
+        "description" : "Lemon-lime flavored soda.",
+        "image" : "./assets/img/starry2.jpg",
+        "pricesm": "2.25",
+        "pricemd": "2.25",
+        "pricelg": "2.25",
+        "category": "drink"
+
+    },
+
+    {
+        "name" : "Chocolate Chip Cookie",
+        "description" : "A large, sweet cookie with many chocolate chips.",
+        "image" : "./assets/img/cookie2.jpg",
+        "pricemd": "2.00",
+        "category": "snack"
+
+    },
+
+    {
+        "name" : "Muffin",
+        "description" : "A sweet muffin rich with chocolate chips.",
+        "image" : "./assets/img/muffins.jpg",
+        "pricemd": "3.00",
+        "category": "snack"
+
+    },
+
+    {
+        "name" : "Burrito",
+        "description" : "Flour tortilla wrapped around egg, cheese, beans, bell peppers, and salsa.",
+        "image" : "./assets/img/burrito.jpg",
+        "pricemd": "5.50",
+        "category": "snack"
+
+    },
+
+    {
+        "name" : "Croissant Sandwich",
+        "description" : "Sausage inside a savory coissant cut in two.",
+        "image" : "./assets/img/croissantPack.jpg",
+        "pricemd": "6.25",
+        "category": "snack"
+
+    },
+    {
+        "name" : "Coffee",
+        "description" : "A energy boosting beverage.",
+        "image" : "./assets/img/coffee.jpg",
+        "pricesm": "4.25",
+        "pricemd": "4.75",
+        "pricelg": "4.95",
+        "category": "drink"
+
+    },
+
+    {
+        "name" : "Smoothie",
+        "description" : "A fruity chilled drink.",
+        "image" : "./assets/img/smoothie.jpg",
+        "pricesm": "5.25",
+        "pricemd": "5.25",
+        "pricelg": "6.25",
+        "category": "drink"
+
+    },
+
+    {
+        "name" : "Chai",
+        "description" : "The perfect autmnal tea.",
+        "image" : "./assets/img/chai.jpg",
+        "pricesm": "2.50",
+        "pricemd": "2.75",
+        "pricelg": "3.00",
+        "category": "drink"
+
+    },
+
+    {
+        "name" : "Hot Chocolate",
+        "description" : "A warm chocolatey drink.",
+        "image" : "./assets/img/hotchocolate.jpg",
+        "pricesm": "3.75",
+        "pricemd": "4.45",
+        "pricelg": "4.95",
+        "category": "drink"
+
+    }
+
+]
