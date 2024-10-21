@@ -1,0 +1,205 @@
+
+.catalog-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-color: rgb(215, 214, 214) !important;
+}
+#menuTitle {
+    color: #c8102e;
+    font-family: "Merriweather", serif;
+    font-size: 3.125rem;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+#menuTitle2 {
+    color: #c8102e;
+    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    margin-top: 45px;
+    margin-bottom: -10px;
+}
+
+.menu_drinks {
+    margin-left: 120px !important;
+    margin-right: 100px !important;
+}
+
+.menu_all, .menu_snacks {
+    margin-left: 220px !important;
+    margin-right: 100px !important;
+}
+
+.menu span {
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    line-height: 8.2;
+    color: #4a4a4a;
+}
+hr {
+    border-top: 3px solid #bbb;
+}
+.buttns {
+    border: 2px solid #7c2529 !important;
+    background-color: transparent;
+    color: #7c2529;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    margin-top: 20px;
+    appearance: none;
+    margin: rem(10) 0;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+.buttns:hover {
+    background-color: #7c2529;
+    color: white;
+}
+
+.activebtn {
+    background-color: #7c2529;
+    color: white;
+}
+.activebtn:hover {
+    color: #F1BE48;
+}
+
+#menu {
+    margin-top: 20px;
+}
+
+.hours {
+    margin-top: -20px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+}
+#hours {
+    color: #7c2529;
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.hover {
+    color:#c8102e; 
+    font-size: small;
+    font-family: sans-serif;
+    width: 150px;
+    text-align: center;
+}
+.drinkshover {
+    color:#c8102e; 
+    font-size: small;
+    font-family: sans-serif;
+    width: 150px;
+    text-align: center;
+    margin-top: 70px !important;
+}
+
+@media (max-width: 991px) {
+    .catalog-img img {
+        width: 100px;
+        height: 100px;
+    }
+    .menu_all, .menu_snacks {
+        margin-left: 50px !important;
+        margin-right: 20px !important;
+    }
+    .menu_drinks {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .menu span {
+        font-size: 1rem;
+        line-height: 6;
+    }
+    #hours {
+        font-size: 1.8rem;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .hours {
+        font-size: 1.1rem;
+    }
+    .hover {
+        font-size:smaller;
+        width: 100px;
+        margin-top: -15px;
+    }
+    .drinkshover {
+        font-size:smaller;
+        width: 100px;
+        margin-top: 35px !important;
+    }
+}
+@media (max-width: 767px) {
+    .menu_all, .menu_snacks {
+        margin-left: 10px !important;
+        margin-right: 0px !important;
+    }
+    .menu_drinks {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    #hours {
+        font-size: 1.6rem;
+    }
+    .hours {
+        font-size: 1.0rem;
+    }
+    .menu span {
+        font-size: 0.9rem;
+        line-height: 5;
+    }
+    .drinkshover {
+        font-size:smaller;
+        width: 100px;
+        margin-top: 20px !important;
+    }
+}
+@media (max-width: 550px) {
+    #hours {
+        font-size: 1.5rem;
+    }
+    .hours {
+        font-size: 0.7rem;
+    }
+}
+
+.sizes {
+    line-height: 1;
+    margin-top: -10px;
+    padding-top: 0;
+}
+.location{
+    margin-top: 3%;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    color: #4a4a4a;
+}
+.hide{
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+.catalog-img:hover + .hide {
+    display: block;
+    color: #c8102e;
+    background-color: #ffffffe1;
+    text-align: center;
+    border-width: 2px;
+    border-color: #7c2529 !important;
+    padding: 30px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.catalog-img:hover{
+    cursor: pointer;
+}
